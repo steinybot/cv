@@ -9981,19 +9981,6 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   color: #434E5E;
 }
 
-@media print {
-  .p-5 {
-    padding: 2rem !important;
-  }
-
-  .pb-5 {
-    padding-bottom: 2rem !important;
-  }
-
-  .mb-5 {
-    margin-bottom: 2rem !important;
-  }
-}
 .resume-section-title {
   font-size: 1.25rem;
   position: relative;
@@ -10124,5 +10111,18 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
     border-radius: 4px;
   }
 }
+@media print {
+  .p-5 {
+    padding: 2rem !important;
+  }
 
-/*# sourceMappingURL=pillar.css.map */
+  .pb-5 {
+    padding-bottom: 2rem !important;
+  }
+
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=cv.css.map */

@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/steinybot/cv#readme",
   "scripts": {
-    "build": "sass src/pillar.scss assets/css/pillar.css"
+    "build": "sass src/:assets/css/"
   }
 }
