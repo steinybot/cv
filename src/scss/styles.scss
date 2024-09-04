@@ -28,9 +28,15 @@ a {
   --bs-link-hover-color-rgb: var(--bs-emphasis-color-rgb);
 }
 
-.title-row >:not(:first-child) {
-  padding-left: 0.35em;
+.title-row {
+  column-gap: 0.35em;
 }
+
+//@media (width >= 768px) {
+//  .title-row > :not(:first-child) {
+//    padding-left: 0.35em;
+//  }
+//}
 
 @media print {
   body.py-5 {
