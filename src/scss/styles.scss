@@ -17,7 +17,6 @@ header[data-bs-theme="dark"] {
   background-color: var(--bs-body-bg);
 }
 
-// Type display classes
 @each $display, $font-size in $display-font-sizes {
   .display-#{$display} {
     letter-spacing: 0.1em;
@@ -25,7 +24,25 @@ header[data-bs-theme="dark"] {
 }
 
 a {
-  //color: var(--text-body-secondary);
   --bs-link-color-rgb: var(--text-body-secondary);
   --bs-link-hover-color-rgb: var(--bs-emphasis-color-rgb);
+}
+
+.title-row >:not(:first-child) {
+  padding-left: 0.35em;
+}
+
+@media print {
+  body.py-5 {
+    padding: 0 !important;
+  }
+
+  .page.shadow {
+    box-shadow: none !important;
+  }
+
+  .title-row, * {
+    break-after: avoid;
+    break-inside: avoid;
+  }
 }
