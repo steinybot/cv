@@ -4,15 +4,16 @@
   "description": "Jason Pickens' Curriculum vitae",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0"
   },
   "scripts": {
-     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "steinybot",
