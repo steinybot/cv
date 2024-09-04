@@ -1,0 +1,31 @@
+$display-font-weight: 900;
+$headings-font-weight: 600;
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+// Workaround for https://github.com/parcel-bundler/parcel/issues/6285.
+$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+.page {
+  max-width: 1000px;
+}
+
+header[data-bs-theme="dark"] {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+// Type display classes
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    letter-spacing: 0.1em;
+  }
+}
+
+a {
+  //color: var(--text-body-secondary);
+  --bs-link-color-rgb: var(--text-body-secondary);
+  --bs-link-hover-color-rgb: var(--bs-emphasis-color-rgb);
+}
