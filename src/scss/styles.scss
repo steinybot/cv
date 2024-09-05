@@ -34,13 +34,7 @@ a {
 
 @media print {
 
-  $page-margin: 5mm;
-
   @page {
-    margin-top: 5mm;
-  }
-
-  @page :first {
     margin: 0;
   }
 
