@@ -32,23 +32,39 @@ a {
   column-gap: 0.35em;
 }
 
-//@media (width >= 768px) {
-//  .title-row > :not(:first-child) {
-//    padding-left: 0.35em;
-//  }
-//}
-
 @media print {
+
+  $page-margin: 5mm;
+
+  @page {
+    margin-top: 5mm;
+  }
+
+  @page :first {
+    margin: 0;
+  }
+
   body.py-5 {
     padding: 0 !important;
   }
 
-  .page.shadow {
-    box-shadow: none !important;
+  .page {
+    .container {
+      max-width: unset;
+    }
+
+    &.shadow {
+      box-shadow: none !important;
+    }
   }
 
-  .title-row, * {
+  .title-row {
     break-after: avoid;
     break-inside: avoid;
+
+    p {
+      break-after: avoid;
+      break-inside: avoid;
+    }
   }
 }
