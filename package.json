@@ -2,7 +2,13 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "Jason Pickens' CV",
-  "main": "index.js",
+  "targets": {
+    "main": {
+      "includeNodeModules": {
+        "*.scss": true
+      }
+    }
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3"
